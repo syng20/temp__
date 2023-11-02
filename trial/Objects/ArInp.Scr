@@ -1,0 +1,5 @@
+--create .\Objects\trial.lib
+.\objects\startup_stm32l476xx.o
+.\objects\led.o
+.\objects\main.o
+.\objects\systimer.o

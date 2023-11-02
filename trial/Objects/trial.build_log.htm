@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Pablo Landriz, University of California, Santa Barbara, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\syng\Documents\189\trial\trial.uvprojx
+Project File Date:  10/31/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32l476xx.s...
+../../../Downloads/Template_L3/Template_L3/L3A/src/SysTimer.c(9): warning: In file included from...
+../../../Downloads/Template_L3/Template_L3/L3A/src/SysTimer.h(12): warning: In file included from...
+../../../Downloads/Template_L3/Template_L3/L3A/src/stm32l476xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../../../Downloads/Template_L3/Template_L3/L3A/src/SysTimer.c(49): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+../../../Downloads/Template_L3/Template_L3/L3A/src/SysTimer.c(46): warning: unused variable 'currentTicks' [-Wunused-variable]
+        uint32_t currentTicks; // Hint: It may be helpful to keep track of what the current tick count is
+                 ^
+../../../Downloads/Template_L3/Template_L3/L3A/src/SysTimer.c(45): warning: unused parameter 'T' [-Wunused-parameter]
+void delay(uint32_t T) {
+                    ^
+../../../Downloads/Template_L3/Template_L3/L3A/src/SysTimer.c(11): warning: no previous extern declaration for non-static variable 'msTicks' [-Wmissing-variable-declarations]
+uint32_t volatile msTicks;
+                  ^
+../../../Downloads/Template_L3/Template_L3/L3A/src/SysTimer.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t volatile msTicks;
+^
+5 warnings generated.
+compiling SysTimer.c...
+../../../Downloads/Template_L3/Template_L3/L3A/src/main.c(9): warning: In file included from...
+../../../Downloads/Template_L3/Template_L3/L3A/src/stm32l476xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../../../Downloads/Template_L3/Template_L3/L3A/src/main.c(13): warning: no previous prototype for function 'System_Clock_Init' [-Wmissing-prototypes]
+void System_Clock_Init(void) {
+     ^
+../../../Downloads/Template_L3/Template_L3/L3A/src/main.c(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void System_Clock_Init(void) {
+^
+static 
+../../../Downloads/Template_L3/Template_L3/L3A/src/main.c(31): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main() {
+        ^
+         void
+3 warnings generated.
+compiling main.c...
+../../../Downloads/Template_L3/Template_L3/L3A/src/LED.c(9): warning: In file included from...
+../../../Downloads/Template_L3/Template_L3/L3A/src/LED.h(12): warning: In file included from...
+../../../Downloads/Template_L3/Template_L3/L3A/src/stm32l476xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+1 warning generated.
+compiling LED.c...
+creating Library...
+".\Objects\trial.lib" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.6.1.pack
+                Keil.STM32L4xx_DFP.2.6.1
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Keil_v5/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Keil_v5/Keil/STM32L4xx_DFP/2.6.1/Drivers/CMSIS/Device/ST/STM32L4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
